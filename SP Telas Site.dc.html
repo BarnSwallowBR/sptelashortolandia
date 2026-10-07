@@ -46,8 +46,8 @@ a{color:#C41E2A;text-decoration:none}a:hover{color:#9E1620}
 <header style="position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e6e4e1">
   <div style="max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px">
     <a href="#inicio" style="display:flex"><img src="uploads/logo180x60.png" alt="SP Telas" style="height:40px;width:auto;display:block"></a>
-    <button style="display:{{ mobileMenuOpen ? 'none' : 'block' }};padding:8px 16px;background:transparent;border:1px solid #ddd;color:#222;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase" aria-label="Menu mobile" onclick="{{ mobileMenuOpen ? setMobileMenuOpen(false) : setMobileMenuOpen(true) }}">Menu</button>
-    <nav id="top-nav" style="display:flex;align-items:center;gap:32px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:18px;letter-spacing:.04em;text-transform:uppercase">
+    <button style="padding:8px 16px;background:transparent;border:1px solid #ddd;color:#222;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase" aria-label="Menu mobile">Menu</button>
+    <nav style="display:flex;flex-direction:column;gap:16px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:18px;letter-spacing:.04em;text-transform:uppercase">
       <a href="#sistemas" style="color:#222">Sistemas</a>
       <a href="#produtos" style="color:#222">Telas</a>
       <a href="#empresa" style="color:#222">Quem somos</a>
@@ -55,14 +55,7 @@ a{color:#C41E2A;text-decoration:none}a:hover{color:#9E1620}
       <a href="{{ wa }}" target="_blank" style="background:#C41E2A;color:#fff;padding:12px 22px;display:flex;align-items:center;gap:10px">Solicitar orçamento</a>
     </nav>
   </div>
-  <style>
-    @media (max-width: 768px) {
-      #top-nav {display:none;position:absolute;top:100%;left:0;right:0;background:#fff;padding:16px 24px;border-top:1px solid #e6e4e1;flex-direction:column;gap:12px}
-      #top-nav.active {display:flex}
-      #top-nav a {width:100%;text-align:center}
-      button {display:block}
-    }
-  </style>
+  
 </header>
 
 <section id="inicio" style="background:#222;color:#fff;position:relative;overflow:hidden">
@@ -207,7 +200,7 @@ a{color:#C41E2A;text-decoration:none}a:hover{color:#9E1620}
         <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(40px,4.6vw,60px);line-height:.95;text-transform:uppercase">Peça seu orçamento</h2>
         <p style="margin:0;font-size:18px;line-height:1.55;color:#bdbdbd">Envie as medidas da obra e retornamos com a proposta.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:#3a3a3a">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;background:#3a3a3a">
         <a href="{{ wa }}" target="_blank" style="background:#C41E2A;color:#fff;padding:24px;display:flex;flex-direction:column;gap:6px" style-hover="background:#9E1620;color:#fff"><span style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#ffe3e4">WhatsApp</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px">(19) 98243-7674</span></a>
         <a href="tel:+551922140621" style="background:#2b2b2b;color:#fff;padding:24px;display:flex;flex-direction:column;gap:6px" style-hover="background:#333;color:#fff"><span style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#a8a8a8">Telefone</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px">(19) 2214-0621</span></a>
         <a href="mailto:vendas@sptelas.com.br" style="background:#2b2b2b;color:#fff;padding:24px;display:flex;flex-direction:column;gap:6px" style-hover="background:#333;color:#fff"><span style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#a8a8a8">E-mail</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px">vendas@sptelas.com.br</span></a>
